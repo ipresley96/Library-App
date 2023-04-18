@@ -1,0 +1,134 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  header, 
+  .form{
+    text-align: center;
+  }
+  
+  .none{
+    display: none;
+  }
+  
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+  }
+  
+  input{
+    width: 300px
+  }
+  
+  
+  .book-container{
+    margin: 0 auto; 
+    max-width: 1000px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  .form{
+    position: relative;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slide-out{
+    background-color: black;
+    padding: 2%;
+    border-radius: 1rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: -50px; 
+    opacity: 0;
+    transition: all 750ms ease-in-out;
+  
+  }
+  
+  .slide-in{
+    position:absolute;
+    top: 20px; 
+    opacity: 1;
+  }
+  
+  .book__add{
+    position: relative;
+    z-index: 100;
+  }
+  
+  .btn{
+    font-size: 15px;
+    background-color: transparent;
+    border: black 1px solid;
+    border-radius: 1rem;
+    padding: .75rem 2rem; 
+    text-transform: uppercase;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+  }
+  
+  .submit{
+    background-color: white;
+    color: black;
+  }
+  .btn:hover{
+    color: white;
+    background-color: black;
+    border: white 1px soild;
+  }
+  
+  .card{
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 10rem;
+  }
+  
+  input{
+    font-size: 15px;
+    padding: .75rem;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    background: none;
+    outline: none;
+  }
+  
+  
+  .read{
+    font-size: 15px;
+    padding: .5rem .5rem .5rem 0;
+    border: none;
+    background: none;
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .hasRead{
+    color: green;
+  }
+  
+  .card-bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .delete{
+    font-size: 16px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: black;
+    width: 30px;
+    cursor: pointer;
+  }
